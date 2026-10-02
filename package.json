@@ -1,0 +1,24 @@
+{
+  "name": "istatistik-asistani",
+  "version": "1.0.0",
+  "description": "Akademik yayınlar için otomatik istatistik: veriyi yükleyin, uygun testi program seçsin. Tarayıcıda çalışır, veri bilgisayardan çıkmaz.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test --test-reporter=dot \"test/*.test.js\"",
+    "build": "node arac/derle.mjs",
+    "dev": "node arac/sunucu.mjs",
+    "r-referans": "node arac/r-referans/uret.cjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "webr": "^0.6.0"
+  },
+  "dependencies": {
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  }
+}

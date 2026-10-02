@@ -1,0 +1,201 @@
+Hasta_No,Grup,Yas,Cinsiyet,VKI,Sigara,Hipertansiyon,Diyabet,Kan_Grubu,CRP,Hemoglobin,Glukoz,Lokosit,Evre,Yatis_Suresi,Komplikasyon
+1,Hasta,36,Erkek,28.6,Hayır,Yok,Yok,A,8.6,13.5,173,8.5,Evre II,4,Yok
+2,Hasta,75,Kadın,29.4,Hayır,Var,Yok,A,5.9,11.6,136,11.4,Evre II,7,Yok
+3,Hasta,52,Erkek,32,Hayır,Var,Yok,A,11,11.5,99,9.1,Evre II,12,Yok
+4,Hasta,60,Kadın,,Hayır,Var,Yok,A,7.8,9.8,118,6.6,Evre III,3,Var
+5,Hasta,58,Erkek,28.1,Hayır,Var,Yok,B,10,12.6,97,12.9,Evre III,7,Yok
+6,Hasta,60,Erkek,26.2,Evet,Var,Yok,0,29.8,14.3,125,9.3,Evre II,6,Yok
+7,Hasta,55,Kadın,28.5,Hayır,Var,Yok,A,9.2,14.3,132,14.3,Evre II,3,Yok
+8,Hasta,78,Kadın,28.7,Hayır,Yok,Yok,A,2.1,13.3,108,10.8,Evre I,5,Yok
+9,Hasta,52,Erkek,29.1,Hayır,Yok,Yok,0,4.8,10.6,136,12.5,Evre II,3,Yok
+10,Hasta,77,Erkek,32,Evet,Yok,Yok,A,5.9,11.2,108,13.4,Evre III,4,Yok
+11,Hasta,39,Erkek,38.3,Hayır,Var,Var,0,48.8,9.8,136,9,Evre III,13,Yok
+12,Hasta,62,Erkek,33.4,Evet,Yok,Var,AB,11.4,13.7,83,7.5,Evre II,8,Yok
+13,Hasta,58,Erkek,27.2,Evet,Var,Var,AB,15.3,14.1,150,8.7,Evre IV,9,Yok
+14,Hasta,53,Kadın,25.8,Evet,Yok,Yok,A,4.9,11.8,142,9.6,Evre II,2,Yok
+15,Hasta,56,Erkek,27.8,Evet,Var,Var,0,24.4,12,112,15.4,Evre I,32,Yok
+16,Hasta,69,Kadın,29.5,Hayır,Yok,Yok,A,22.2,13.3,159,8.6,Evre IV,9,Yok
+17,Hasta,60,Kadın,29.8,Hayır,Yok,Var,0,7.3,12.8,108,8.9,Evre II,7,Yok
+18,Hasta,51,Kadın,28.9,Hayır,Yok,Var,A,13.8,14.8,119,10.6,Evre I,3,Yok
+19,Hasta,54,Erkek,31,Hayır,Yok,Var,B,7.5,13.6,174,12.5,Evre III,10,Yok
+20,Hasta,49,Erkek,30.1,Hayır,Yok,Var,A,89.3,11.1,120,8.1,Evre III,6,Yok
+21,Hasta,66,Erkek,29.2,Hayır,Yok,Yok,A,7.2,14.3,57,7.8,Evre I,3,Yok
+22,Hasta,63,Erkek,25.5,Hayır,Yok,Yok,0,9.6,10.4,128,9.1,Evre II,5,Var
+23,Hasta,49,Erkek,21.8,Hayır,Yok,Yok,B,2.6,12,128,11.1,Evre III,4,Yok
+24,Hasta,59,Kadın,32.7,Hayır,Var,Var,A,86.9,13,107,6.2,Evre I,4,Yok
+25,Hasta,57,Erkek,26.2,Evet,Yok,Var,B,26.1,11.3,167,12.8,Evre IV,5,Yok
+26,Hasta,49,Kadın,25.9,Evet,Yok,Var,A,8.3,13.3,101,10.4,Evre II,14,Yok
+27,Hasta,65,Erkek,29.8,Hayır,Var,Var,A,94,13.3,124,9.9,Evre II,9,Yok
+28,Hasta,27,Erkek,23.9,Evet,Var,Yok,A,40.4,13.6,117,14.9,Evre III,8,Var
+29,Hasta,48,Erkek,24.8,Evet,Var,Yok,B,12.3,14,114,14.2,Evre II,6,Yok
+30,Hasta,66,Erkek,33.3,Hayır,Yok,Yok,0,5.2,13.4,107,10.6,Evre II,9,Yok
+31,Hasta,57,Erkek,22.8,Hayır,Var,Yok,A,12.7,13.3,93,7.7,Evre II,3,Yok
+32,Hasta,74,Erkek,26.1,Hayır,Yok,Yok,0,12.4,13.5,126,7.8,Evre I,7,Yok
+33,Hasta,46,Kadın,24.3,Hayır,Yok,Yok,B,27.5,11.8,54,8.6,Evre I,6,Yok
+34,Hasta,61,Erkek,28,Hayır,Yok,Yok,A,2.1,11.8,164,11,Evre III,12,Yok
+35,Hasta,66,Kadın,25.3,Evet,Var,Yok,0,48.6,11.7,103,12.2,Evre II,5,Yok
+36,Hasta,70,Kadın,26.3,Evet,Var,Yok,A,5.6,13.9,87,9.6,Evre II,6,Yok
+37,Hasta,56,Erkek,26.2,Hayır,Var,Yok,0,10.6,13.1,139,8.9,Evre I,49,Yok
+38,Hasta,51,Erkek,31.1,Evet,Var,Yok,B,6.8,14.6,130,5.9,Evre II,5,Yok
+39,Hasta,67,Erkek,25.1,Hayır,Var,Yok,A,7.7,11.1,175,9.8,Evre II,7,Var
+40,Hasta,48,Erkek,26.9,Hayır,Var,Yok,AB,13.8,14.1,131,10.2,Evre II,7,Yok
+41,Hasta,74,Erkek,41.2,Evet,Var,Yok,0,14.6,12.4,151,16.1,Evre I,6,Yok
+42,Hasta,73,Erkek,32,Hayır,Yok,Yok,A,20.2,14,98,9.9,Evre III,3,Yok
+43,Hasta,58,Erkek,23,Hayır,Var,Yok,0,10.6,13.5,90,8.3,Evre I,5,Yok
+44,Hasta,26,Erkek,25.9,Evet,Var,Yok,B,9.8,13.1,117,9.7,Evre III,4,Yok
+45,Hasta,57,Erkek,23.9,Hayır,Yok,Yok,0,7.6,11.6,92,6.8,Evre III,22,Yok
+46,Hasta,63,Erkek,23.9,Evet,Var,Yok,B,12.3,15.6,105,13.9,Evre II,7,Yok
+47,Hasta,44,Kadın,23.6,Hayır,Yok,Yok,A,4.8,12.9,121,11.4,Evre III,1,Yok
+48,Hasta,67,Kadın,33.9,Hayır,Yok,Var,A,40.5,11.9,159,11.7,Evre II,2,Yok
+49,Hasta,67,Erkek,21.1,Evet,Var,Var,B,13.1,15.3,100,9.2,Evre I,9,Yok
+50,Hasta,67,Erkek,27.8,Hayır,Var,Yok,A,6.3,13.7,134,5.9,Evre IV,4,Yok
+51,Hasta,71,Kadın,25.9,Hayır,Var,Yok,A,13.5,14.3,172,8.3,Evre II,6,Yok
+52,Hasta,49,Erkek,23.6,Evet,Var,Yok,A,50.4,10.1,132,12.1,Evre II,5,Yok
+53,Hasta,68,Erkek,22.7,Evet,Yok,Yok,0,62.1,12.7,157,10.2,Evre I,9,Yok
+54,Hasta,58,Erkek,28.2,Evet,Yok,Yok,A,5.7,13.6,154,9,Evre IV,7,Yok
+55,Hasta,66,Kadın,34.9,Evet,Yok,Var,B,25.1,12,166,11.3,Evre I,7,Yok
+56,Hasta,39,Kadın,26.5,Hayır,Var,Var,0,11.6,12.3,147,6.1,Evre II,8,Yok
+57,Hasta,57,Erkek,30.8,Evet,Yok,Yok,A,8.7,12.8,104,10.9,Evre II,8,Yok
+58,Hasta,50,Kadın,26.8,Evet,Var,Yok,A,9,13.8,123,7.3,Evre IV,1,Var
+59,Hasta,54,Kadın,31,Hayır,Var,Yok,0,,12.8,125,11.7,Evre III,5,Yok
+60,Hasta,62,Kadın,29.8,Evet,Var,Var,A,4.6,14.4,74,9.7,Evre II,7,Yok
+61,Hasta,59,Kadın,30.3,Evet,Yok,Yok,A,35.6,14.1,92,13.3,Evre I,10,Yok
+62,Hasta,64,Erkek,28.5,Hayır,Yok,Yok,B,25.2,13.3,93,8.7,Evre II,17,Var
+63,Hasta,50,Erkek,30.5,Hayır,Yok,Var,AB,19.1,10.9,141,9.2,Evre III,4,Yok
+64,Hasta,63,Erkek,30.7,Hayır,Yok,Var,0,14.6,13,147,8.8,Evre II,6,Yok
+65,Hasta,37,Erkek,23.6,Hayır,Yok,Yok,A,7.9,13.8,98,8.7,Evre IV,6,Yok
+66,Hasta,55,Erkek,25.6,Hayır,Yok,Yok,0,12.1,13.1,159,13.3,Evre IV,8,Yok
+67,Hasta,49,Kadın,29.6,Hayır,Yok,Yok,0,39.8,10.7,96,7.1,Evre IV,7,Var
+68,Hasta,59,Erkek,20.9,Evet,Var,Yok,0,14.4,13.1,71,5.7,Evre I,4,Yok
+69,Hasta,43,Erkek,29.7,Hayır,Var,Yok,0,5.9,16.6,115,8.7,Evre I,2,Yok
+70,Hasta,55,Kadın,25.2,Hayır,Yok,Yok,0,39.1,10.2,143,9,Evre II,3,Yok
+71,Hasta,57,Kadın,29.2,Hayır,Yok,Yok,AB,4.3,10.8,100,6.6,Evre I,8,Yok
+72,Hasta,63,Kadın,31.2,Hayır,Yok,Yok,0,48.7,12.3,147,11.6,Evre II,5,Yok
+73,Hasta,49,Kadın,33,Evet,Var,Yok,A,75.4,12.7,,10.2,Evre I,4,Yok
+74,Hasta,19,Erkek,24,Hayır,Yok,Yok,A,4.2,11.2,127,12,Evre I,3,Yok
+75,Hasta,60,Kadın,27,Hayır,Yok,Yok,AB,16.7,14.1,113,12.5,Evre IV,4,Yok
+76,Hasta,56,Erkek,26.5,Evet,Var,Yok,B,12.2,16.2,121,4.1,Evre I,6,Yok
+77,Hasta,37,Kadın,30.7,Evet,Yok,Yok,A,19.1,13.8,123,6,Evre II,5,Yok
+78,Hasta,64,Kadın,26.6,Hayır,Var,Yok,A,14.3,12.5,108,14.2,Evre III,3,Yok
+79,Hasta,59,Erkek,28.3,Hayır,Var,Yok,A,12.6,13,81,11.6,Evre I,15,Yok
+80,Hasta,63,Erkek,26.7,Evet,Yok,Yok,A,26.9,12.2,90,11.9,Evre III,3,Yok
+81,Hasta,65,Erkek,30.5,Evet,Yok,Yok,A,11.5,13.5,122,5.7,Evre II,27,Yok
+82,Hasta,54,Erkek,29.8,Hayır,Yok,Yok,B,12.4,14.8,131,14.2,Evre IV,4,Var
+83,Hasta,84,Kadın,20.7,Hayır,Var,Yok,B,23.1,13.7,147,10.3,Evre I,24,Var
+84,Hasta,56,Kadın,27.1,Evet,Yok,Yok,A,14.1,11.9,114,7,Evre II,3,Yok
+85,Hasta,53,Kadın,28.7,Evet,Var,Yok,A,1.5,13.4,96,6.4,Evre III,6,Yok
+86,Hasta,64,Erkek,31.8,Evet,Yok,Yok,A,3.3,12.9,119,9.1,Evre I,6,Yok
+87,Hasta,62,Erkek,32.4,Evet,Yok,Yok,0,7.5,14.4,136,7.6,Evre I,2,Yok
+88,Hasta,48,Kadın,20.4,Hayır,Var,Yok,A,28.5,12.2,110,15.7,Evre II,5,Yok
+89,Hasta,61,Erkek,,Hayır,Yok,Yok,B,25.2,11.9,73,11,Evre I,3,Yok
+90,Hasta,46,Erkek,30.1,Hayır,Var,Yok,0,16.8,13.8,130,7.4,Evre I,2,Yok
+91,Hasta,59,Erkek,24.6,Hayır,Yok,Yok,A,23.6,12.6,143,22.4,Evre I,2,Yok
+92,Hasta,58,Kadın,28.8,Evet,Yok,Yok,B,12.2,11.1,162,12.7,Evre II,11,Var
+93,Hasta,50,Erkek,21.7,Hayır,Yok,Yok,0,30.2,11.5,118,6.8,Evre III,3,Yok
+94,Hasta,70,Kadın,35.8,Evet,Yok,Var,B,7.3,11.3,118,10.1,Evre II,12,Yok
+95,Hasta,59,Kadın,29.3,Hayır,Var,Yok,A,26.7,9.3,130,11.7,Evre I,4,Yok
+96,Hasta,66,Kadın,26.7,Evet,Var,Yok,B,2.8,11,83,8.3,Evre II,1,Yok
+97,Hasta,62,Erkek,21.2,Hayır,Var,Yok,A,,12.7,146,9.7,Evre II,14,Yok
+98,Hasta,56,Erkek,33,Evet,Var,Yok,0,22.7,16.5,103,4.4,Evre II,7,Yok
+99,Hasta,43,Kadın,29.5,Evet,Var,Yok,A,21.3,10.4,114,17.4,Evre III,2,Yok
+100,Hasta,60,Erkek,36,Evet,Yok,Yok,B,2.5,11.8,178,10.5,Evre III,4,Yok
+101,Kontrol,45,Kadın,24.3,Hayır,Var,Var,B,3,11.2,109,12.5,,,Yok
+102,Kontrol,70,Erkek,23.9,Hayır,Yok,Yok,A,2,13.4,66,6.9,,,Yok
+103,Kontrol,64,Kadın,22.6,Evet,Yok,Yok,A,2.1,12.6,91,8.5,,,Var
+104,Kontrol,49,Kadın,25.9,Hayır,Yok,Yok,AB,3.4,14,,11.1,,,Yok
+105,Kontrol,56,Erkek,22,Evet,Var,Yok,0,6,13.8,123,6.6,,,Var
+106,Kontrol,56,Kadın,25.6,Evet,Yok,Var,A,1.5,12.8,89,7.7,,,Yok
+107,Kontrol,66,Erkek,25.2,Hayır,Yok,Yok,AB,1.8,15.4,109,9.6,,,Yok
+108,Kontrol,45,Kadın,25.6,Hayır,Var,Yok,0,2,14.3,75,5.2,,,Yok
+109,Kontrol,38,Erkek,27.1,Hayır,Yok,Yok,A,6.2,14.3,97,7.7,,,Yok
+110,Kontrol,60,Kadın,29.2,Hayır,Yok,Yok,B,1.1,12,77,6.5,,,Yok
+111,Kontrol,49,Erkek,25,Hayır,Yok,Yok,A,2.7,14.8,103,8,,,Yok
+112,Kontrol,57,Kadın,27.9,Hayır,Var,Yok,0,1.8,15.6,113,7.7,,,Yok
+113,Kontrol,43,Kadın,23.5,Evet,Yok,Yok,A,1.7,13.9,93,6.4,,,Yok
+114,Kontrol,67,Erkek,24.4,Hayır,Var,Var,0,4.9,12.6,92,8.6,,,Yok
+115,Kontrol,73,Kadın,26.1,Evet,Var,Var,AB,1.5,13.6,73,7.4,,,Yok
+116,Kontrol,78,Erkek,25.1,Hayır,Yok,Yok,B,1.3,15.6,91,5.8,,,Yok
+117,Kontrol,37,Kadın,27.3,Evet,Yok,Yok,B,6.1,11.3,99,8.5,,,Yok
+118,Kontrol,65,Erkek,20.1,Hayır,Yok,Yok,AB,1.5,15.6,106,6.8,,,Yok
+119,Kontrol,52,Kadın,24.8,Hayır,Yok,Yok,0,6.2,12.5,98,8.9,,,Yok
+120,Kontrol,54,Erkek,33.3,Hayır,Var,Yok,AB,2.3,14.4,98,8.9,,,Yok
+121,Kontrol,61,Kadın,28.2,Hayır,Yok,Yok,AB,7,12.6,80,8.7,,,Yok
+122,Kontrol,59,Kadın,27.4,Hayır,Yok,Yok,A,1.5,13.4,91,9.4,,,Yok
+123,Kontrol,46,Erkek,16.8,Hayır,Yok,Var,0,0.9,14.5,104,9.4,,,Yok
+124,Kontrol,51,Erkek,20.1,Hayır,Yok,Yok,AB,0.5,12.9,,6.4,,,Yok
+125,Kontrol,58,Erkek,23.3,Hayır,Var,Yok,A,5,12.4,116,10.9,,,Yok
+126,Kontrol,72,Erkek,,Evet,Yok,Yok,0,1.6,14.6,111,11.6,,,Yok
+127,Kontrol,63,Kadın,22.3,Evet,Yok,Var,A,0.6,14.8,84,8.5,,,Yok
+128,Kontrol,50,Kadın,23,Evet,Yok,Yok,A,1,12.4,94,10.2,,,Yok
+129,Kontrol,53,Erkek,27.1,Hayır,Var,Yok,A,2.2,15.1,83,7.4,,,Yok
+130,Kontrol,69,Erkek,20.5,Hayır,Var,Yok,A,6.6,15,77,6.6,,,Yok
+131,Kontrol,70,Erkek,28.2,Evet,Yok,Yok,0,14.2,14.5,114,7.8,,,Yok
+132,Kontrol,44,Erkek,24.5,Hayır,Yok,Yok,0,3.1,14.8,93,7.1,,,Yok
+133,Kontrol,60,Kadın,27.7,Hayır,Yok,Yok,AB,,12.7,94,7.2,,,Yok
+134,Kontrol,41,Erkek,28.7,Hayır,Var,Yok,B,4.4,12,84,8.8,,,Yok
+135,Kontrol,44,Kadın,23.5,Hayır,Yok,Yok,B,3.8,13.3,94,8.4,,,Yok
+136,Kontrol,43,Erkek,30.1,Hayır,Yok,Yok,0,0.7,15.3,110,8.1,,,Yok
+137,Kontrol,38,Erkek,28.1,Hayır,Yok,Yok,A,3.7,14,102,6.9,,,Yok
+138,Kontrol,47,Kadın,31.7,Hayır,Yok,Var,A,11.4,14.8,104,9.3,,,Yok
+139,Kontrol,48,Erkek,26.8,Hayır,Var,Yok,0,2.5,13.2,95,5,,,Yok
+140,Kontrol,53,Kadın,29.9,Hayır,Yok,Yok,0,2.7,12.8,82,6.1,,,Yok
+141,Kontrol,59,Kadın,29.7,Hayır,Yok,Yok,A,0.8,15.5,108,7.3,,,Yok
+142,Kontrol,55,Erkek,17.1,Hayır,Yok,Yok,A,2.6,13.6,124,5.4,,,Yok
+143,Kontrol,56,Kadın,23.6,Hayır,Yok,Yok,B,4.9,12.7,102,7.7,,,Yok
+144,Kontrol,39,Kadın,22.9,Hayır,Yok,Yok,B,2.4,8.6,,5.6,,,Yok
+145,Kontrol,72,Kadın,19.9,Evet,Yok,Yok,0,3.2,16.2,,6,,,Yok
+146,Kontrol,40,Kadın,22.9,Evet,Yok,Yok,B,0.2,14.6,111,6.4,,,Yok
+147,Kontrol,59,Kadın,30.8,Hayır,Yok,Yok,B,1,13.6,95,7.8,,,Yok
+148,Kontrol,64,Kadın,30.9,Hayır,Var,Yok,0,3.3,13,75,7.1,,,Yok
+149,Kontrol,52,Kadın,24.1,Hayır,Yok,Yok,A,0.7,12.6,102,7.3,,,Yok
+150,Kontrol,67,Kadın,30.9,Hayır,Yok,Yok,A,5.2,12.8,110,9.3,,,Yok
+151,Kontrol,74,Kadın,23.3,Hayır,Yok,Yok,A,2.6,14.7,101,6.3,,,Yok
+152,Kontrol,59,Erkek,26.7,Hayır,Yok,Yok,A,0.8,15.3,94,5.3,,,Yok
+153,Kontrol,58,Kadın,23.5,Hayır,Yok,Yok,AB,1.3,13.6,107,7.5,,,Yok
+154,Kontrol,49,Erkek,29.8,Evet,Yok,Yok,A,4.5,12.8,90,5.5,,,Yok
+155,Kontrol,78,Kadın,22.9,Hayır,Var,Yok,0,4.2,12.5,94,6.2,,,Yok
+156,Kontrol,70,Erkek,20.9,Evet,Var,Yok,A,7.8,13.3,106,6.3,,,Yok
+157,Kontrol,25,Erkek,29.4,Evet,Var,Yok,AB,1.9,13.1,90,6,,,Yok
+158,Kontrol,83,Kadın,26.4,Hayır,Yok,Yok,0,2.3,13.7,86,8.8,,,Yok
+159,Kontrol,55,Erkek,28.4,Hayır,Yok,Var,0,,15.9,86,6.7,,,Yok
+160,Kontrol,67,Kadın,27.4,Evet,Var,Yok,A,3.7,12.4,94,9.7,,,Yok
+161,Kontrol,63,Kadın,26.8,Hayır,Yok,Yok,0,2.6,13.5,84,7.6,,,Yok
+162,Kontrol,61,Kadın,23.9,Hayır,Yok,Yok,B,2.1,14.9,130,8.4,,,Yok
+163,Kontrol,65,Erkek,25.8,Hayır,Yok,Yok,A,0.9,16.4,114,7.9,,,Var
+164,Kontrol,65,Kadın,22.5,Hayır,Var,Yok,0,2.3,13.6,108,5.7,,,Yok
+165,Kontrol,51,Kadın,31,Hayır,Yok,Yok,A,2.1,14.9,96,8.4,,,Yok
+166,Kontrol,66,Erkek,30.5,Hayır,Yok,Yok,A,3.1,11.4,92,7,,,Yok
+167,Kontrol,42,Erkek,29.2,Hayır,Yok,Yok,AB,5.8,18,93,6,,,Yok
+168,Kontrol,62,Kadın,36.2,Hayır,Yok,Yok,0,4.1,13.4,90,9.7,,,Yok
+169,Kontrol,54,Kadın,17.9,Evet,Yok,Yok,B,1,11.7,77,6.9,,,Yok
+170,Kontrol,50,Erkek,19.1,Evet,Yok,Yok,AB,2.9,15.1,90,5.8,,,Yok
+171,Kontrol,45,Erkek,26.2,Hayır,Yok,Yok,A,1.7,13.3,119,9.1,,,Yok
+172,Kontrol,54,Kadın,30.7,Evet,Yok,Var,A,1.2,13.7,97,6.4,,,Yok
+173,Kontrol,55,Erkek,27,Evet,Yok,Yok,0,,13.8,101,10.7,,,Yok
+174,Kontrol,69,Erkek,25.1,Hayır,Var,Yok,A,6,14.9,111,8.4,,,Yok
+175,Kontrol,47,Kadın,33.1,Evet,Yok,Yok,A,1.7,12.7,101,5.3,,,Yok
+176,Kontrol,58,Erkek,20.8,Hayır,Yok,Yok,A,6,14.9,94,6.4,,,Yok
+177,Kontrol,47,Kadın,28.4,Hayır,Yok,Yok,0,0.8,12.8,85,5.6,,,Yok
+178,Kontrol,44,Kadın,22.2,Hayır,Yok,Yok,A,5.2,13.6,112,5.1,,,Yok
+179,Kontrol,45,Erkek,22.4,Hayır,Yok,Yok,0,4.7,14,108,5.2,,,Yok
+180,Kontrol,49,Erkek,20.8,Evet,Yok,Yok,AB,3.7,11.1,73,6.2,,,Yok
+181,Kontrol,48,Erkek,27.7,Hayır,Yok,Yok,B,3.6,15,101,6.5,,,Yok
+182,Kontrol,65,Kadın,23.9,Evet,Yok,Yok,A,0.3,12.9,105,6.9,,,Yok
+183,Kontrol,55,Kadın,25.6,Hayır,Var,Yok,AB,3.4,10.9,98,10.8,,,Yok
+184,Kontrol,59,Kadın,30.2,Hayır,Yok,Yok,0,3,11.7,88,8.9,,,Yok
+185,Kontrol,39,Kadın,26.4,Hayır,Yok,Yok,A,4.1,13.8,99,8.5,,,Yok
+186,Kontrol,45,Erkek,21.3,Hayır,Yok,Yok,A,1,14.6,100,7.3,,,Yok
+187,Kontrol,61,Kadın,,Evet,Yok,Yok,AB,6,13.3,81,9.2,,,Yok
+188,Kontrol,51,Erkek,35.2,Hayır,Yok,Var,A,8.8,16.2,96,10.7,,,Yok
+189,Kontrol,54,Erkek,20.6,Hayır,Var,Yok,A,1.2,13.4,84,7.4,,,Yok
+190,Kontrol,44,Erkek,29.1,Hayır,Yok,Yok,A,3.1,15.2,70,7.4,,,Yok
+191,Kontrol,42,Kadın,27.3,Evet,Yok,Yok,0,7.5,11,87,11.2,,,Yok
+192,Kontrol,52,Erkek,25.2,Hayır,Yok,Yok,A,6.4,12.2,81,8.3,,,Yok
+193,Kontrol,61,Kadın,28.8,Evet,Yok,Yok,A,1.8,13.3,97,8.6,,,Yok
+194,Kontrol,61,Kadın,24.4,Hayır,Yok,Yok,B,2.4,13.4,98,6.4,,,Yok
+195,Kontrol,49,Kadın,28.7,Hayır,Yok,Yok,0,1.2,13.7,114,7.3,,,Yok
+196,Kontrol,38,Erkek,29.3,Hayır,Yok,Var,A,9.5,15.4,101,5.8,,,Yok
+197,Kontrol,44,Kadın,22.4,Hayır,Yok,Yok,A,2,13.3,120,8.5,,,Yok
+198,Kontrol,56,Kadın,30.9,Hayır,Yok,Yok,A,0.5,14.7,72,5.5,,,Yok
+199,Kontrol,59,Erkek,27.2,Hayır,Yok,Yok,0,1.6,14.9,94,6.1,,,Yok
+200,Kontrol,52,Kadın,21.5,Hayır,Yok,Yok,0,4.2,11.9,75,7.7,,,Yok
