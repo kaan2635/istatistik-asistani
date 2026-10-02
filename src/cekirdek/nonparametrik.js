@@ -99,18 +99,6 @@ function qKesikli(p, frek, toplam, maks) {
   return q;
 }
 
-function qwilcox(p, m, n) {
-  const f = mannWhitneyFrekans(m, n);
-  let t = 0;
-  for (let i = 0; i < f.length; i++) t += f[i];
-  return qKesikli(p, f, t, m * n);
-}
-
-function qsignrank(p, n) {
-  const f = isaretliSiraFrekans(n);
-  return qKesikli(p, f, 2 ** n, (n * (n + 1)) / 2);
-}
-
 /** Sıralı dizinin ayrık değerleri ve her değerden büyük eleman sayısı */
 function ayrikDegerler(D) {
   const deger = [];
@@ -212,10 +200,15 @@ function siraToplamKesinDagilim(puan2, m, butce = 3e8, sayac = null) {
 }
 
 /** İşaretli sıralar istatistiğinin (orta sıralarla) kesin dağılımı: Σ z_i B_i, B_i ~ Bernoulli(1/2). Puanlar 2·sıra. */
-function isaretliKesinDagilim(puan2, butce = 3e8) {
+function isaretliKesinDagilim(puan2, butce = 3e8, sayac = null) {
   let smaks = 0;
   for (const a of puan2) smaks += a;
-  if (puan2.length * (smaks + 1) > butce) return null;
+  const maliyet = puan2.length * (smaks + 1);
+  if (maliyet > butce) return null;
+  if (sayac) {
+    if (sayac.kalan < maliyet) return null;
+    sayac.kalan -= maliyet;
+  }
   const f = new Float64Array(smaks + 1);
   f[0] = 1;
   let ust = 0;
@@ -608,10 +601,11 @@ function mwHodgesLehmann(x, y, { tur, duzey, alt, sureklilik, uyarilar, kesinGAB
  * @param {number[]} x 1. ölçüm (ya da tek örneklem)
  * @param {number[]|null} y 2. ölçüm (tek örneklem için null)
  * @param {{mu?:number, yontem?:string, sureklilik?:boolean, duzey?:number, alternatif?:string, hodgesLehmann?:boolean,
- *   sifirYontemi?:'wilcoxon'|'pratt'}} secenek
+ *   sifirYontemi?:'wilcoxon'|'pratt', kesinGAButce?:number}} secenek
+ *   kesinGAButce: bağlı/sıfırlı veride kesin güven aralığı taramasının hesap bütçesi; aşılırsa asimptotik aralık verilir.
  */
 export function wilcoxonIsaretliSira(x, y = null, secenek = {}) {
-  const { mu = 0, yontem = 'otomatik', sureklilik = false, duzey = 0.95, hodgesLehmann = true, sifirYontemi = 'wilcoxon' } = secenek;
+  const { mu = 0, yontem = 'otomatik', sureklilik = false, duzey = 0.95, hodgesLehmann = true, sifirYontemi = 'wilcoxon', kesinGAButce = 3e9 } = secenek;
   const alt = alternatifAl(secenek.alternatif);
   sayiKontrol(x, '1. ölçüm');
   gerekli(['otomatik', 'kesin', 'asimptotik'].includes(yontem), `Bilinmeyen yöntem: ${yontem}`);
@@ -737,13 +731,13 @@ export function wilcoxonIsaretliSira(x, y = null, secenek = {}) {
     if (nToplam > 4000) uyarilar.push('Hodges-Lehmann tahmini çok büyük örneklem nedeniyle hesaplanmadı.');
     else {
       const tur = pKesin === null ? 'asimptotik' : kesinBagli ? 'kesin-bagli' : 'kesin';
-      Object.assign(sonuc, isaretliHodgesLehmann(ham, { tur, duzey, alt, sureklilik, uyarilar }));
+      Object.assign(sonuc, isaretliHodgesLehmann(ham, { tur, duzey, alt, sureklilik, uyarilar, kesinGAButce }));
     }
   }
   return sonuc;
 }
 
-function isaretliHodgesLehmann(x, { tur, duzey, alt, sureklilik, uyarilar }) {
+function isaretliHodgesLehmann(x, { tur, duzey, alt, sureklilik, uyarilar, kesinGAButce }) {
   const n = x.length;
   const M = (n * (n + 1)) / 2;
   const W = new Float64Array(M);
@@ -758,6 +752,7 @@ function isaretliHodgesLehmann(x, { tur, duzey, alt, sureklilik, uyarilar }) {
   let gercekDuzey = duzey;
   if (tur === 'kesin-bagli') {
     const onbellek = new Map();
+    const sayac = { kalan: kesinGAButce };
     const kuyruk = (mu, altKuyruk) => {
       const xd = x.map((v) => v - mu);
       const { sira } = siralar(xd.map(Math.abs));
@@ -767,8 +762,8 @@ function isaretliHodgesLehmann(x, { tur, duzey, alt, sureklilik, uyarilar }) {
       const ky = puanAnahtari(puan2);
       let dag = onbellek.get(ky);
       if (!dag) {
-        const f = isaretliKesinDagilim(puan2);
-        if (!f) throw new IstatistikHatasi('Kesin güven aralığı bu örneklem için hesaplanamayacak kadar büyük.');
+        const f = isaretliKesinDagilim(puan2, 3e8, sayac);
+        if (!f) throw new IstatistikHatasi('Bağlı veride kesin güven aralığı taraması hesap bütçesini aştı.');
         dag = dagilimOzeti(f);
         onbellek.set(ky, dag);
       }

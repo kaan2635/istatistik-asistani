@@ -1,7 +1,7 @@
 // Fisher-Freeman-Halton kesin testi (r × c tablolar).
 //
 // Kesin p: tablonun koşullu (satır ve sütun toplamları sabit) olasılığı gözlenen tablonunkinden küçük ya da eşit
-// olan tüm tabloların olasılık toplamı (R fisher.test ile aynı tanım; eşitlik için 1e-7 göreli tolerans).
+// olan tüm tabloların olasılık toplamı (R fisher.test ile aynı tanım ve aynı eşitlik toleransı; aşağıya bakın).
 // Algoritma: ağ (network) algoritması (Mehta & Patel 1983 yaklaşımı). Sütunlar sırayla işlenir; düğüm = kalan
 // satır toplamlarının sıralı vektörü (satırlar gelecekte simetrik olduğundan). Her düğümde "geçmiş" log olasılık
 // değerleri (aynı değerler birleştirilerek) tutulur. Bir alt düğüme geçerken geleceğin en büyük ve en küçük
@@ -13,7 +13,10 @@
 import { logFaktoriyel } from './sayisal.js';
 import { IstatistikHatasi } from './hata.js';
 
-const LOG_TOLERANS = Math.log1p(1e-7); // R fisher.test: d <= d_gozlenen * (1 + 1e-7)
+// Eşit olasılıklı tabloların sayılması için tolerans (log ölçeği). R: 2 × 2 tablolarda d <= d_gozlenen·(1 + 1e-7);
+// r × c tablolarda FEXACT log olasılığa TOL = 3.45254e-7 ekler. Aynı değerler kullanılır (R ile birebir uyum için).
+const LOG_TOLERANS_2x2 = Math.log1p(1e-7);
+const LOG_TOLERANS_RXC = 3.45254e-7;
 const GUVENLIK = 1e-9; // sınırlar için yuvarlama güvenlik payı (log ölçeği)
 const BIRLESTIRME = 1e-9; // aynı sayılan geçmiş değerleri birleştirme toleransı (log ölçeği)
 
@@ -174,7 +177,7 @@ function agKesinP(satirT, sutunT, gozlenenLogF, LF, butce) {
   const r = satirT.length;
   const c = sutunT.length;
   const N = satirT.reduce((a, b) => a + b, 0);
-  const esik = gozlenenLogF + LOG_TOLERANS;
+  const esik = gozlenenLogF + butce.logTolerans;
   let K = -LF[N];
   for (const R of satirT) K += LF[R];
   const C = sutunT;
@@ -621,10 +624,15 @@ function kosulariBirlestir(kosular) {
  * R'deki yöntemle ayrıca hesaplar).
  *
  * @param {number[][]} tablo negatif olmayan tamsayı frekanslar
- * @param {{yontem?:'otomatik'|'kesin'|'monte-carlo', zamanSiniri?:number, islemSiniri?:number, B?:number, tohum?:number}} secenek
- *   yontem 'otomatik': kesin hesap bütçeyi (varsayılan 5 sn) aşarsa Monte Carlo; 'kesin': bütçe aşılırsa hata;
- *   'monte-carlo': doğrudan Monte Carlo (B = 100000 varsayılan).
- * @returns {{p:number, pYontemi:'kesin'|'monte-carlo', sh?:number, B?:number, tohum?:number, sure:number, uyarilar:string[]}}
+ * @param {{yontem?:'otomatik'|'kesin'|'monte-carlo', zamanSiniri?:number, islemSiniri?:number, depoSiniri?:number,
+ *   B?:number, tohum?:number, tolerans?:number, kesinSinir?:boolean}} secenek
+ *   yontem 'otomatik': kesin hesap bütçeyi aşarsa (zamanSiniri varsayılan 5000 ms, islemSiniri 2e8 sütun dağılımı,
+ *   depoSiniri bir aşamada 1.2e7 geçmiş değer) Monte Carlo; 'kesin': bütçe (600 sn) aşılırsa IstatistikHatasi;
+ *   'monte-carlo': doğrudan Monte Carlo (B = 100000, tohum = 20240601 varsayılan; aynı tohum aynı sonucu verir).
+ *   tolerans: eşit olasılık için göreli tolerans (varsayılan R ile aynı: 2 × 2'de 1e-7, r × c'de FEXACT'in 3.45254e-7'si).
+ *   kesinSinir: gelecek sınırları dinamik programlamayla kesin hesapla (varsayılan yalnızca 2 satırlı tablolarda).
+ * @returns {{p:number, pYontemi:'kesin'|'monte-carlo', sh?:number, B?:number, tohum?:number, sure:number,
+ *   dugumSayisi?:number, uyarilar:string[]}} sh: Monte Carlo p'nin standart hatası √(p(1-p)/B)
  */
 export function fisherRxC(tablo, secenek = {}) {
   const { yontem = 'otomatik', B = 100000, tohum = 20240601 } = secenek;
@@ -668,6 +676,7 @@ export function fisherRxC(tablo, secenek = {}) {
       depo: secenek.depoSiniri ?? 1.2e7,
       kesinSinirIslem: secenek.kesinSinirIslem ?? 3e6,
       kesinSinir: secenek.kesinSinir ?? R.length === 2,
+      logTolerans: secenek.tolerans !== undefined ? Math.log1p(secenek.tolerans) : R.length === 2 && Cs.length === 2 ? LOG_TOLERANS_2x2 : LOG_TOLERANS_RXC,
     };
     try {
       const s = agKesinP(R, Cs, gozlenenLogF, LF, butce);
